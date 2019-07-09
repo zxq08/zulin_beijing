@@ -16,21 +16,21 @@
 			<button id="logOut">退出登录</button>
 		</div>
 		<div class="param">
-			<div class="param_child">
+			<div class="param-child">
 				<span>总公司：</span>
 				<input type="text" name="" value="北京航天平安汽车租赁有限责任公司">
 			</div>			
-			<div class="param_child">
+			<div class="param-child">
 				<span>分公司：</span>
 				<input type="text" name="" value="北京航天平安汽车租赁有限责任公司本部">
 			</div>
-			<div class="param_child">
+			<div class="param-child">
 				<span>部门：</span>
 				<select>
 					<option value="系统管理" selected="selected">系统管理</option>
 				</select>
 			</div>			
-			<div class="param_child">
+			<div class="param-child">
 				<span>操作人：</span>
 				<input type="text" name="" value="航天平安系统管理员">
 			</div>
@@ -40,43 +40,128 @@
 	<!-- 页面主体 -->
 	<div class="content">
 		<div class="tabs">
-			<ul id="tabs_button" class="tabs_button">
+			<ul id="tabs-button" class="tabs-button">
 				<li>
-					<a href="#">未缴费停车记录</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio1" >
+					<label for="tabs-radio1">未缴费停车记录</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">未缴费停车记录</a> -->
 				</li>
 				<li>
-					<a class="active" href="#">个人信息</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio2" checked>
+					<label for="tabs-radio2">企业信息</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left">
+							<ul>
+								<li>
+									<input type="radio" name="userInfo" class="userInfo" id="userInfo" checked>
+									<label for="userInfo">修改密码</label>
+								</li>
+								<li>
+									<input type="radio" name="userInfo" class="userInfo" id="getInfo">
+									<label for="getInfo">找回密码</label>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs-content-right">
+							<div class="userInfo-page"></div>
+							<div class="getInfo-page"></div>
+						</div>
+					</div>
+					<!-- <a class="active" href="#">企业信息</a> -->
 				</li>
 				<li>
-					<a href="#">预定</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio3" >
+					<label for="tabs-radio3">预定</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">预定</a> -->
 				</li>
 				<li>
-					<a href="#">合同管理</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio4" >
+					<label for="tabs-radio4">合同管理</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">合同管理</a> -->
 				</li>
 				<li>
-					<a href="#">定价中心</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio5" >
+					<label for="tabs-radio5">定价中心</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">定价中心</a> -->
 				</li>
 				<li>
-					<a href="#">客户管理</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio6" >
+					<label for="tabs-radio6">客户管理</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">客户管理</a> -->
 				</li>
 				<li>
-					<a href="#">车辆管理</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio7" >
+					<label for="tabs-radio7">车辆管理</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">车辆管理</a> -->
 				</li>
 				<li>
-					<a href="#">车险管理</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio8" >
+					<label for="tabs-radio8">车险管理</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">车险管理</a> -->
 				</li>
 				<li>
-					<a href="#">车务管理</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio9" >
+					<label for="tabs-radio9">车务管理</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">车务管理</a> -->
 				</li>
 				<li>
-					<a href="#">公司管理</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio10" >
+					<label for="tabs-radio10">公司管理</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">公司管理</a> -->
 				</li>
 				<li>
-					<a href="#">企业自评</a>
+					<input type="radio" name="tabs-radio" class="tabs-radio" id="tabs-radio11" >
+					<label for="tabs-radio11">企业自评</label>
+					<div class="tabs-content">
+						<div class="tabs-content-left"></div>
+						<div class="tabs-content-right"></div>
+					</div>
+					<!-- <a href="#">企业自评</a> -->
 				</li>
 			</ul>
 		</div>
-		<div class=""></div>
 	</div>
 </body>
 </html>

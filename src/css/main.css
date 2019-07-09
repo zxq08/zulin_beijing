@@ -38,18 +38,18 @@ html, body{
 	background: #e3e3e3;
 	padding: 5px 0;
 }
-.param > .param_child{
+.param > .param-child{
 	float: left;
 	width: 320px;
 	font-size: 12px;
 	color: #0089e0;
 	margin: 0 auto;
 }
-.param > .param_child:after{
+.param > .param-child:after{
 	clear: both;
 }
-.param > .param_child > input,
-.param > .param_child > select{
+.param > .param-child > input,
+.param > .param-child > select{
 	width: 240px;
 	background: #fff;
 }
@@ -59,7 +59,7 @@ html, body{
 	border-top: 1px solid #0080cc;
 	border-bottom: 1px solid #0080cc;
 }
-.tabs > .tabs_button > li{
+.tabs > .tabs-button > li{
 	float: left;
 	width: 9%;
 	height: 40px;
@@ -71,18 +71,84 @@ html, body{
     display: table; /*采用此方法可以有效避免浏览器兼容问题*/
     clear: both;
 }
-.tabs > .tabs_button > li > a{
+/*.tabs > .tabs-button > li > a{
 	display: inline-block;
 	width: 100%;
 	height: 40px;
 	line-height: 40px;
 	color: #000;
 }
-.tabs > .tabs_button > li:hover a{
+.tabs > .tabs-button > li:hover a{
 	background: #0080cc;
 	color: #fff;
 }
-.tabs > .tabs_button > li > a.active{
+.tabs > .tabs-button > li > a.active{
 	color: #fff;
 	background: #0089e0;
+}*/
+/* 0709 test */
+.tabs > .tabs-button > li > label{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+}
+.tabs > .tabs-button > li:hover > label{
+	background: #0080cc;
+	color: #fff;
+}
+.tabs > .tabs-button > li > .tabs-radio:checked +label{
+	color: #fff;
+	background: #0089e0;
+}
+.tabs > .tabs-button > li > .tabs-radio{
+	display: none;
+}
+.tabs > .tabs-button > li > .tabs-radio:checked ~.tabs-content{
+	visibility: visible;
+  	opacity: 1;
+  	transform: scale(1);
+}
+.tabs > .tabs-button > li > .tabs-content{
+	position: absolute;
+	left: 0;
+	top: 130px;
+	bottom: 0;
+  	visibility: hidden;
+  	width: 100%;
+  	opacity: 0;
+  	transition: transform .5s, opacity .7s;
+  	overflow: hidden;
+}
+.tabs-content > .tabs-content-left{
+	width: 300px;
+	height: 100%;
+	border-right: 2px solid #d3d3d3;
+}
+.tabs-content > .tabs-content-left li{
+	height: 22px;
+	border-bottom: 1px solid #ddd;
+}
+.tabs-content > .tabs-content-left li > label{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.tabs-content > .tabs-content-left  .userInfo{
+	display: none;
+}
+.tabs-content > .tabs-content-left  .userInfo:checked +label{
+	background: #ddd;
+	color: #0089e0; 
+}
+.tabs-content > .tabs-content-left  .userInfo +label{
+	background: #fff;
+	color:  #000;
+	cursor: pointer;
+}
+.tabs-content > .tabs-content-left  .userInfo +label:hover{
+	background: #ddd;
+	color: #0089e0;
+
 }
