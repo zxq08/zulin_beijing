@@ -1,0 +1,74 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+.lg-container{
+	width: 100%;
+	height: 100%;
+	background: url('../img/body_bg.jpg') center -30px no-repeat;
+	overflow: hidden;
+}
+.lg-container > .lg-header{
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+	font-family: 'KaiTi';
+	margin-top: 60px;
+}
+.lg-header > .subtitle{
+	font-size: 24px;
+}
+.lg-container > .lg-content{
+	width: 500px;
+	height: 300px;
+	padding-top: 100px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	margin-left: -250px;
+	background: url('../img/login_bg.png') no-repeat;
+}
+.lg-content > .lg-input{
+	width: 244px;
+	margin: 0 auto;
+	padding: 10px 0;
+	color: #fff;
+	text-align: center;
+}
+.lg-content > .lg-input > input{
+	border-radius: 5px;
+	background: #efefef;
+	width: 240px;
+	height: 30px;
+	font-size: 16px;
+	outline: 0 none;
+	border: 2px solid #efefef;
+}
+.lg-content > .lg-input > input:focus{
+	/*outline: 0 none;*/
+	border: 2px solid #0089e0;
+}
+#lg-btn > a{
+	float: left;
+	width: 120px;
+	height: 40px;
+	margin: 20px 0 0 128px;
+	background: url('../img/login_btn01.png') no-repeat;
+}
+.lg-content > .lg-car{
+	position: absolute;
+	left: 250px;
+	top: 130px;
+}
+.lg-footer{
+	position: absolute;
+	font-size: 14px;
+	color: #efefef;
+	bottom: 0;
+	left: 50%;
+	margin-left: -150px;
+}
+.lg-footer > a{
+	color: #f44336;
+	text-decoration: underline;
+}
