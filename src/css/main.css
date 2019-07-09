@@ -1,0 +1,88 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Microsoft Yahei';
+	font-size: 16px;
+}
+.header > .title{
+	border-bottom: 3px solid #0089e0;
+	padding-top: 15px;
+	
+}
+.header > .title > h2{
+	margin-left: 40px;	
+}
+.header > .title > #logOut{
+	float: right;
+	width: 100px;
+	height: 30px;
+	margin-top: -30px;
+	margin-right: 100px;
+	background: #0089e0;
+	border-radius: 10% 10% 0 0;
+	border: 0;
+	color: #efefef;
+	cursor: pointer;
+}
+.header > .title > #logOut:hover{
+	color: #fff;
+	background: #029afb;
+}
+.header:after{
+	clear: both;
+}
+.param{
+	text-align: center;
+	height: 30px;
+	line-height: 30px;
+	background: #e3e3e3;
+	padding: 5px 0;
+}
+.param > .param_child{
+	float: left;
+	width: 320px;
+	font-size: 12px;
+	color: #0089e0;
+	margin: 0 auto;
+}
+.param > .param_child:after{
+	clear: both;
+}
+.param > .param_child > input,
+.param > .param_child > select{
+	width: 240px;
+	background: #fff;
+}
+.content{
+	width: 100%;
+	height: 40px;
+	border-top: 1px solid #0080cc;
+	border-bottom: 1px solid #0080cc;
+}
+.tabs > .tabs_button > li{
+	float: left;
+	width: 9%;
+	height: 40px;
+	font-size: 14px;
+	text-align: center;
+}
+.tabs:after{
+	content: "";
+    display: table; /*采用此方法可以有效避免浏览器兼容问题*/
+    clear: both;
+}
+.tabs > .tabs_button > li > a{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+}
+.tabs > .tabs_button > li:hover a{
+	background: #0080cc;
+	color: #fff;
+}
+.tabs > .tabs_button > li > a.active{
+	color: #fff;
+	background: #0089e0;
+}
